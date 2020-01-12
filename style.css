@@ -1,3 +1,6 @@
- [
-    color= #0066ff 
- ]
+ h1 {
+    color: blue;
+  }
+  body {
+    color: red;
+  }
