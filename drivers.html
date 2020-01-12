@@ -2,36 +2,197 @@
 <html>
   <head>
     <link rel= "stylesheet" href= "style.css">
+    <link rel= "navbar" href= "navbar.css">
     <meta charset="utf-8">
-    <title>Kortkommandon</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+        border-right:1px solid #bbb;
+      }
+      
+      li:last-child {
+        border-right: none;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #4CAF50;
+      }
+      </style>
+    <title>Förarna</title>
   </head>
   <body>
+  
+
+  <body>
     <img src="images/caloggo.png" alt="Craft Academy Logo">
+
     <nav class=navbar>
-        <ul>
-          <li><a href="index.html">Indexsida</a></li>
-          <li><a href="startsida.html" class=selected>Startsida</a></li>
-          <li><a href="kortkommandon.html">kortkommandon</a>
-          <li><a href="tutoriols.html">Tutoriols</a></li>
-        </ul>
-      </nav>
-    <h1>Kortkommandon Mac</h1>
-    <p>Här kommer jag att lägga upp kortkommandon för Mac</p>
-    <ol> Kortkommandolista </ol>
-    <table>
-        <tr>Table row
-          <th>Kommando</th>
-          <th>Formel</th>
+      <ul>
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="tracks.html" class=selected>Banorna</a></li>
+        <li><a href="drivers.html">Förarna</a>
+        <li><a href="calender.html">F1 Kalender</a></li>
+        <li><a href="others.html"> Övrigt</a></li>
+      </ul>
+    </nav>
+
+    <h1>Förarna 2020</h1>
+    <h2>Lista över årets F1 Förare</h2>
+    
+    <style>
+      #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #customers tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #customers tr:hover {background-color: #ddd;}
+      
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: red;
+        color: white;
+      }
+      </style>
+      
+      <table id="customers">
+        <tr>
+          <th>Förare</th>
+          <th>Stall</th>
+          <th>Poäng 2019</th>
         </tr>
         <tr>
-          <td>command+alt+3</td>
-          <td>Printscreen</td>
+          <td>Lewis Hamilton</td>
+          <td>Mercedes Benz</td>
+          <td>413</td>
         </tr>
+        <tr>
+          <td>Valtteri Bottas</td>
+          <td>Mercedes Benz</td>
+          <td>326</td>
+        </tr>
+        <tr>
+          <td>Max Verstappen</td>
+          <td>RedBull Racing</td>
+          <td>278</td>
+        </tr>
+        <tr>
+          <td>Charles Leclerc</td>
+          <td>Ferrari</td>
+          <td>264</td>
+        </tr>
+        <tr>
+          <td>Sebastian Vettel</td>
+          <td>Ferrari</td>
+          <td>240</td>
+        </tr>
+        <tr>
+          <td>Carlos Sainz</td>
+          <td>McLaren</td>
+          <td>96</td>
+        </tr>
+        <tr>
+          <td>Pierre Gasly</td>
+          <td>Toro Rosso</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Alexander Albon</td>
+          <td>RedBull Racing</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Daniel Ricciardo</td>
+          <td>Renault</td>
+          <td>54</td>
+        </tr>
+        <tr>
+          <td>Sergio Perez</td>
+          <td>Racing Point BWT Mercedes</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td>Lando Norris</td>
+          <td>McLaren</td>
+          <td>49</td>
+        </tr>
+        <tr>
+          <td>Kimi Räikkönen</td>
+          <td>Alfa Romeo</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Danill Kvyat</td>
+          <td>Scuderia Toro Rosso</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <td>Nico Hulkenberg</td>
+          <td>Renault</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <td>Lance Stroll</td>
+          <td>Racing Point BWT Mercedes</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Kevin Magnussen</td>
+          <td>HAAS</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Antonio Giovinazzi</td>
+          <td>Alfa Romeo</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Romain Grosjean</td>
+          <td>HAAS</td>
+          <td>8</td>
+        </tr>
+          <tr>
+          <td>Robert Kubica</td>
+          <td>Williams</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>George Russel</td>
+          <td>Williams</td>
+          <td>0</td>
+        </tr>
+
       </table>
+      
+      </body>  
 
-    <li> list item 1 </li>
-    <li> list item 2 </li>
-
-    
-  </body>
 </html>
