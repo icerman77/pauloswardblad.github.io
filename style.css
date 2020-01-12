@@ -22,7 +22,12 @@ body {
     background : inherit;
     }
   
+.container {
+    width: 1000px;
+    margin: auto
+    }
+
   .h2 {
-  color : #FFFCD1;
-  background : inherit;
-  }
+    color : #FFFCD1;
+    background : inherit;
+    }
