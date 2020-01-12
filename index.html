@@ -2,21 +2,58 @@
 <html>
   <head>
     <link rel= "stylesheet" href= "style.css">
+    <link rel= "navbar" href= "navbar.css">
     <meta charset="utf-8">
-    <title>My First 2 Website</title>
+      <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 150px;
+          background-color: #f1f1f1;
+          border: 1px solid #555;
+        }
+        
+        li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        
+        li {
+          text-align: center;
+          border-bottom: 1px solid #555;
+        }
+        
+        li:last-child {
+          border-bottom: none;
+        }
+        
+        li a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        </style>
+    <title>Min F1</title>
   </head>
   <body>
     <img src="images/caloggo.png" alt="Craft Academy Logo">
     <nav class=navbar>
       <ul>
-        <li><a href="index.html">Indexsida</a></li>
-        <li><a href="startsida.html" class=selected>Startsida</a></li>
-        <li><a href="kortkommandon.html">kortkommandon</a>
-        <li><a href="tutoriols.html">Tutoriols</a></li>
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="tracks.html" class=selected>Banorna</a></li>
+        <li><a href="drivers.html">Förarna</a>
+        <li><a href="calender.html">F1 Kalender</a></li>
       </ul>
     </nav>
-    <link rel= "navbar" href= "navbar.css">
-    <h1>Hello World</h1>
+
+    <h1>Formel 1 2020</h1>
     <p>I´m Paulo, and I attend the Craft Academy Bootcamp</p>
     <table>
       <tr>Table row
@@ -28,10 +65,8 @@
         <td>Table row2</td>
       </tr>
     </table>
-    ### An inline frame is used to embed another document whitin the current html document.
-    <iframe>src"text"></iframe>
 
-    <button type="button"> Click Me!</button>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vyn2PqMfC78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <form action="/action_page.php" method="get">
       Input 1 <Input type="text" name="inp1"><br>
