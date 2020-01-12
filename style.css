@@ -1,6 +1,28 @@
- h1 {
-    color: blue;
+body {
+  padding : 0;
+  margin : 0;
+  font : 1.0em sans-serif;
+  line-height : 1.5em;
+  background : rgb(216, 134, 134);
+  color : #454545;
   }
-  body {
-    color: red;
+
+.h1 {
+  color : #95fc0f;
+  }
+
+.logo {
+    float : left;
+    width : 180px;
+    padding : 10px 0 11px 10px;
+    }
+  
+.p {
+    color : rgb(235, 39, 218);
+    background : inherit;
+    }
+  
+  .h2 {
+  color : #FFFCD1;
+  background : inherit;
   }
